@@ -24,7 +24,7 @@ export default function Home() {
           <Ultravox {...{state, setState, transcript, setTranscript}} />
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Transcript sx={{ m: 1 }} />
+          <Transcript sx={{ m: 1 }} transcript={transcript} />
         </Grid>
       </Grid>
     </Container >

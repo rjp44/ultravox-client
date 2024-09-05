@@ -118,6 +118,7 @@ export default function Transcript({ transcript, sx }) {
   const listRef = useRef(null);
 
   useEffect(() => {
+    console.log({ transcript }, 'render');
     listRef.current?.lastElementChild?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }, [transcript]);
 
